@@ -1,0 +1,119 @@
+:root {
+    --background-color: #dad1d1;
+    --backgound-color-hover: #bdbdbd;
+    --margin: 20px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    color: black;
+
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-30%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn1 {
+    from {
+        transform: translateX(-30%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+#Caculator {
+    display: block;
+    background-color: var(--background-color);
+}
+
+#Caculator .Caculator_Heading {
+    display: flex;
+    max-height: 50px;
+    line-height: 50px;
+
+}
+
+
+.Caculator_Heading .Caculator_Logo {
+    margin: 0px 15px 0px var(--margin);
+    max-width: 50px;
+}
+
+.Caculator_Heading p {
+    font-size: 35px;
+}
+
+#Caculator .Caculator_Menu {
+    position: relative;
+    background-color: var(--background-color);
+    max-height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.Menu_List {
+    display: none;
+    position: absolute;
+    background-color: var(--background-color);
+    min-width: 250px;
+    min-height: 90%;
+    bottom: 10px;
+    left: 0px;
+    animation: slideIn 0.2s forwards
+}
+
+.Menu_List a {
+    margin: 0px 15px 0px var(--margin);
+    padding: 10px;
+    font-size: 25px;
+
+}
+
+.Menu_List a:hover {
+    background-color: var(--backgound-color-hover);
+    border-radius: 100%;
+}
+
+
+
+.Caculator_Menu a {
+    /* padding: 5px; */
+    margin: 0px 15px 0px var(--margin);
+    line-height: 50px;
+    transition: 0.5s;
+    font-size: 25px;
+
+}
+
+.Caculator_Menu a i {
+    padding: 0px 10px;
+}
+
+.Caculator_Menu a:hover {
+    background-color: var(--backgound-color-hover);
+    border-radius: 100%;
+}
+
+.Caculator_Menu .Text_Standard {
+    padding: 0px 15px;
+    font-size: 25px;
+}
+
+.Caculator_Menu a:nth-child(3) {
+    margin-left: 3px;
+    font-size: 30px;
+}
